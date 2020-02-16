@@ -10,13 +10,13 @@ while True:
 
     # Plot the points in the walk.
     plt.style.use('seaborn')
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(15, 9))
     poin_numbers = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, s=5, c=poin_numbers, cmap=plt.cm.winter)
+    ax.scatter(rw.x_values, rw.y_values, s=1, c=poin_numbers, cmap=plt.cm.winter)
 
     # Remove the axes.
-    ax.get_xaxis().set_visible(False)
-    ax.get_yaxis().set_visible(False)
+    # ax.get_xaxis().set_visible(False)
+    # ax.get_yaxis().set_visible(False)
 
     # Emphasize the first and last points.
     ax.scatter(rw.x_values[0], rw.y_values[0], c='green', s=100)
