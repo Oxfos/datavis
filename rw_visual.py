@@ -12,7 +12,7 @@ while True:
     plt.style.use('seaborn')
     fig, ax = plt.subplots()
     poin_numbers = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, s=15, c=poin_numbers, cmap=plt.cm.winter)
+    ax.scatter(rw.x_values, rw.y_values, s=5, c=poin_numbers, cmap=plt.cm.winter)
 
     # Remove the axes.
     ax.get_xaxis().set_visible(False)
