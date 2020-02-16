@@ -14,6 +14,10 @@ while True:
     poin_numbers = range(rw.num_points)
     ax.scatter(rw.x_values, rw.y_values, s=15, c=poin_numbers, cmap=plt.cm.winter)
 
+    # Remove the axes.
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+
     # Emphasize the first and last points.
     ax.scatter(rw.x_values[0], rw.y_values[0], c='green', s=100)
     ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', s=100)
